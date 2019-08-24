@@ -1,0 +1,15 @@
+@import './../common.scss';
+
+article *,aside *{
+    color: $white-color;
+}
+article mat-card{
+    background: $nocolor;
+}
+.know_more{
+    align-content: right;
+}
+
+@media screen and (max-width: 768px){
+
+}
