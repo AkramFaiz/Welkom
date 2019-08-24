@@ -7,11 +7,13 @@
     height: 22px;
 }
 
-mat-toolbar {
+.toolbar {
     background-color: $nocolor;
     color: $white-color;
+    height: 60px;
+    margin: 0 10px;
 }
-mat-grid-list{
+.grid-list{
     width: 100%;
 }
 .app_logo{
@@ -24,4 +26,17 @@ span{
 .app_logo *{
     display: inline-block;
     vertical-align: baseline;
+}
+
+.content{
+    margin: 20px;
+    height: calc(100% - 140px);
+}
+
+.footer{
+    height: 40px;
+    background: rgba(160,160,160,0.2);
+    color: $white-color;
+    display: block;
+    text-align: right;
 }

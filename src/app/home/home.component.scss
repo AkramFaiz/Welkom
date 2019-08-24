@@ -3,8 +3,11 @@
 article *,aside *{
     color: $white-color;
 }
-article mat-card{
+article .card{
     background: $nocolor;
+}
+.card-actions{
+    text-align: right;
 }
 .know_more{
     align-content: right;
