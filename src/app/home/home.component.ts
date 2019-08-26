@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Forms } from '../interfaces/forms';
 
 @Component({
   selector: 'app-home',
@@ -13,10 +15,20 @@ export class HomeComponent implements OnInit {
   };
   sInfo = [];
 
-  constructor() { }
+  forms: Forms[] = [
+    { formname: 'NDA Form', formcode: 'NDAF'},
+    { formname: 'Hardware Transfer Request Form', formcode: 'HTRF'},
+    { formname: 'Sample Form', formcode: 'SF'}
+  ];
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.sInfo = this.compInfo.secondarycontent.split('|');
   }
-
+  formClicked(val: string) {
+    for (const ff of this.forms) {
+      if (val === ff.formcode) {this.router.navigate(['/comform'], { queryParams: { type: ff.formcode }}); }
+    }
+  }
 }

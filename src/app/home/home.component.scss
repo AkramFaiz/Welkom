@@ -6,6 +6,13 @@ article *,aside *{
 article .card{
     background: $nocolor;
 }
+aside{
+    padding: 40px 0 0 0 ;
+}
+aside button{
+    background: rgba(12,24,39,0.4);
+    padding: 30px 40px;
+}
 .card-actions{
     text-align: right;
 }

@@ -17,9 +17,9 @@
         </mat-card>  
 </article>
 <aside>
-    <mat-list role="list">
-            <mat-list-item role="listitem">Item 1</mat-list-item>
-            <mat-list-item role="listitem">Item 2</mat-list-item>
-            <mat-list-item role="listitem">Item 3</mat-list-item>
-    </mat-list>
+        <mat-grid-list class="grid-list" cols="12">
+            <mat-grid-tile [colspan]=4 *ngFor="let f of forms;index as i;">
+                <button mat-raised-button (click)="formClicked(f.formcode)">{{f.formname}}</button>
+            </mat-grid-tile>
+        </mat-grid-list>
 </aside>
