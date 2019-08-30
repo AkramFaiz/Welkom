@@ -10,6 +10,7 @@ import { DetailViewComponent } from './detail-view/detail-view.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonformComponent } from './commonform/commonform.component';
+import { UrlPipe } from './pipes/url.pipe';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,14 @@ import { CommonformComponent } from './commonform/commonform.component';
     DetailViewComponent,
     DashboardComponent,
     FooterComponent,
-    CommonformComponent
+    CommonformComponent,
+    UrlPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatModule
+    MatModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,9 @@ aside button{
     background: rgba(12,24,39,0.4);
     padding: 30px 40px;
 }
+aside button:hover{
+    background: rgba(0,0,0,0.5);
+}
 .card-actions{
     text-align: right;
 }
